@@ -83,7 +83,7 @@ def __get_date_and_days(db, latest, table, col, stat_name):
 def copy_data(overwite, latest, stats):
     """Copy data from a mounted Garmin USB device to files."""
     logger.info("___Copying Data___")
-    copy = Copy(gc_config.device_mount_dir())
+    copy = Copy()#gc_config.device_mount_dir())
 
     settings_dir = gc_config.get_fit_files_dir()
     root_logger.info("Copying settings to %s", settings_dir)

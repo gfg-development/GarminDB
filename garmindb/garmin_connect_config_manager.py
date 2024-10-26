@@ -221,23 +221,23 @@ class GarminConnectConfigManager(JsonConfig):
         return self.get_node_value('directories', 'mount_dir')
 
     def __device_garmin_dir(self):
-        return self.device_mount_dir() + os.sep + 'garmin'
+        return self.device_mount_dir() + os.sep + 'GARMIN'
 
     def device_settings_dir(self):
         """Return the full path to the settings file on a mounted device."""
-        return self.__device_garmin_dir() + os.sep + 'settings'
+        return self.__device_garmin_dir() + os.sep + 'Settings'
 
     def device_monitoring_dir(self):
         """Return the full path to the monitoring files on a mounted device."""
-        return self.__device_garmin_dir() + os.sep + 'monitor'
+        return self.__device_garmin_dir() + os.sep + 'Monitor'
 
     def device_sleep_dir(self):
         """Return the full path to the sleep files on a mounted device."""
-        return self.__device_garmin_dir() + os.sep + 'sleep'
+        return self.__device_garmin_dir() + os.sep + 'Sleep'
 
     def device_activities_dir(self):
         """Return the full path to the activities files on a mounted device."""
-        return self.__device_garmin_dir() + os.sep + 'activity'
+        return self.__device_garmin_dir() + os.sep + 'Activity'
 
     def download_days_overlap(self):
         """Return the number of days to overlap previously downloaded data when downloading."""
